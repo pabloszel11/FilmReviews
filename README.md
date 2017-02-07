@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App for film reviews. Users can add films, edit them, as well as rate and write reviews. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Additional gems I used:
+-bootstrap-sass (https://rubygems.org/gems/bootstrap-sass)
+-devise (https://rubygems.org/gems/devise)
+-simple_form (https://rubygems.org/gems/simple_form)
+-paperclip (https://rubygems.org/gems/paperclip)
