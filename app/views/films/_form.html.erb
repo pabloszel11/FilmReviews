@@ -1,0 +1,8 @@
+<%= simple_form_for @film do |f|%>
+	<%= f.input :title %>
+	<%= f.input :description %>
+	<%= f.input :director %>
+	<%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name) %>
+	<%= f.file_field :film_img %>
+	<%= f.button :submit %>
+<% end %>

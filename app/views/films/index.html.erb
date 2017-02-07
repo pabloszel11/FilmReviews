@@ -1,0 +1,16 @@
+<% if @films.count == 0 %>
+	<center><h1>There are no <%= params[:genre] %> films in the database at the moment </h1></center>
+<% elsif !params[:genre].blank? %>
+	<center><h1 class = "current-genre"><%= params[:genre] %> films</h1></center>
+<% end %>
+
+<div class = "row">
+	<% @films.each do |film| %>
+		<div class = "col-md-3">
+			<a href = "/films/<%= film.id %>">
+				<%=	image_tag film.film_img.url(:film_index) %>
+			</a> 
+		</div>
+	<% end %>
+</div>
+
